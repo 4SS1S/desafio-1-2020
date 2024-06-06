@@ -2,6 +2,8 @@
 [![Platform](https://img.shields.io/badge/platform-nodejs-lightgrey.svg?style=flat)](https://developer.ibm.com/node/)
 [![](https://img.shields.io/discord/734849242153222221?logo=discord)](https://discord.gg/2NRPpcU)
 
+**Atenção: O serviço Watson Visual Recognition usado neste desafio não está mais disponível no catálogo da IBM Cloud. Para trabalhar com classificação de imagens, recomendamos o [IBM Maximo](https://www.ibm.com/products/maximo/remote-monitoring)**
+
 # Desafio 01 | Cocamar
 
 - [1. Sobre a Cocamar](#1-sobre-a-cocamar)
@@ -42,7 +44,7 @@ A ideia do desafio é auxiliar o dia a dia do produtor, fornecendo para ele uma 
 
 ## 3. Objetivo
 
-O objetivo deste desafio é criar um sistema automático de identificação das pragas que atigem a lavoura de soja citadas acima. Para esse desafio aconselhamos que o participante utilize o _IBM Watson Visual Recognition_ e monte o seu classificador através dele. Antes o participante terá que separar manualmente as imagens da base nas classes citadas anteriormente. Caso considere pertinente, cada participante pode manipular as imagens da base previamente afim de melhorar a acurácia de classificação do modelo do Watson Visual Recognition.
+O objetivo deste desafio é criar um sistema automático de identificação das pragas que atingem a lavoura de soja citadas acima. Para esse desafio aconselhamos que o participante utilize o _IBM Watson Visual Recognition_ e monte o seu classificador através dele. Antes o participante terá que separar manualmente as imagens da base nas classes citadas anteriormente. Caso considere pertinente, cada participante pode manipular as imagens da base previamente afim de melhorar a acurácia de classificação do modelo do Watson Visual Recognition.
 
 Vamos focar somente nas quatro principais pragas que atigem a lavoura de soja, são elas:
 
@@ -51,7 +53,7 @@ Vamos focar somente nas quatro principais pragas que atigem a lavoura de soja, s
 3. Percevejo pequeno
 4. Percevejo verde
 
-*Obs: Os nomes das classes esperadas são apresetados mais abaixo. Não utilize os nomes acima como nome das classes.*
+*Obs: Os nomes das classes esperadas são apresentados mais abaixo. Não utilize os nomes acima como nome das classes.*
 
 Sua tarefa é buscar imagens dessas pragas e criar um modelo de reconhecimento visual capaz de identificar corretamente cada uma delas, de modo que o agrônomo consiga dar o tratamento adequado.
 
@@ -135,8 +137,8 @@ Cada participante deve considerar quatro classes em seu modelo, sendo elas:
 
 - `lagarta` -> representando a lagarta de soja
 - `percevejo_marrom` -> representando o pervejo marrom
-- `percevejo_pequeno` -> repressantando o percevejo pequeno
-- `percevejo_verde` -> representnado o percevejo verde
+- `percevejo_pequeno` -> representando o percevejo pequeno
+- `percevejo_verde` -> representando o percevejo verde
 
 Veja o vídeo abaixo de como treinar o seu modelo de Visual Recognition, usando Watson Studio.
 
@@ -149,6 +151,8 @@ Veja o vídeo abaixo de como treinar o seu modelo de Visual Recognition, usando 
 ## 5. Submissão
 
 Para submeter sua solução é necessário subir a aplicação de submissão na IBM Cloud, você deve **clicar no botão abaixo**, que irá ativar a ferramenta de _Continuous Delivery_ da IBM Cloud (também conhecida como _Delivery Pipeline_). A ferramenta irá pedir suas credenciais, seu e-mail, e uma senha, que você deve escolher para utilizar futuramente.
+
+Antes de iniciar o processo de deploy, você pode assistir ao vídeo a seguir para esclarecer qualquer tipo de dúvida acerca desta etapa: https://youtu.be/hBvnC83ZKM4
 
 <div align="center">
 <p><b>🚨 CLIQUE PARA SUBIR A APLICAÇÃO NA IBM CLOUD 🚨</b></p>
@@ -169,7 +173,7 @@ Para pegar o `IAM_APIKEY` (ou, em alguns casos, `API Key` apenas) e a `URL` do V
     <img width="750" src="./doc/source/images/VRAPIKEY.png">
     <h3><b>URL do Visual Recognition na IBM Cloud</b></h3>
     <img width="750" src="./doc/source/images/VRURL.png">
-    <h3><b>CLASSIFIER_ID no Watson Studio</b></h3>
+    <h3><b>MODEL_ID no Watson Studio</b></h3>
     <img width="750" src="./doc/source/images/VRMODEL.png">
 </div>
 
@@ -202,7 +206,7 @@ _Exemplo: Um usuário extrapola o limite do plano Lite criando 4 classes com 250
 
 Caso o vídeo publicado acima não seja suficiente, você pode analisar a documentação oficial do serviço envolvido no desafio:
 
-- [IBM Watson Visual Recognition]()
+- [IBM Watson Visual Recognition](https://cloud.ibm.com/docs/visual-recognition)
 
 Você também pode acessar o discord oficial da Maratona 2020 para realizar perguntas e/ou interagir com outros participantes: [Discord](https://discord.gg/2NRPpcU).
 
